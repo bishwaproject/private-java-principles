@@ -1,0 +1,17 @@
+## Note about IMMUTABLE CLASS
+1. Why we need immutable class in java
+An immutable class in java is a class whose objects cannot be motified once they are created. In other words, the state of an immutable object remains constant throughout its lifetime.
+The purpose of using immutable classes is to ensure that the objects are thread-safe, have predictable behavior, and are resistent to bugs that can be caused by unintended modifications.
+Here are a few reasons why immutable class is desirable.
+1. Thread-safty
+2. Simplicity and predictibility
+3. Security 
+immutable objects are immune to malicious or accidental modifications. This is particularly important when dealing with sensitive data or in scnenarios where object tampring can lead to security vulnerabilities.
+4. Caching and performance optimization
+immutable objects can be safety shared and cached, as their state cannot change. This can lead to performance optimizations by reducing the need to create multiple instances of the same object.
+5. API design and correctness:
+Immutable classes often provide well-defined APIs that promote good programming practices. By making certain fields or properties read-only, you can enforce correctness and prevent unintended modifications from outside the class.
+By desigining and using immutable classes, you can create more reliable, maintainable, and predictable code, especially in scenarios where mutability is not necessary.
+
+## Code example: 
+1. PersonFinal.java
